@@ -1,0 +1,381 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
+}
+
+nav {
+    background: #fcf5ef;
+    padding: 10px 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.nav-link.active,
+.custom-active {
+    background: white;
+    color: #f2859e;
+}
+
+.nav-link:hover {
+    color: #f2859e;
+}
+
+.d-flex.align-items-center.gap-3 a i {
+    margin-right: 5px;
+}
+
+.d-flex.align-items-center.gap-3 a {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.d-flex.align-items-center.gap-3 a:hover {
+    color: #f2859e;
+}
+
+@media (max-width: 768px) {
+    .container.d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .d-flex.align-items-center.gap-3 {
+        justify-content: center;
+    }
+}
+
+
+.hero-section {
+    background-color: #f8a8b2;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 600px;
+}
+
+.hero-text h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    color: white;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.contact-btn {
+    background-color: #f16179;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.contact-btn:hover {
+    background-color: #f16179;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.arrow-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow-box button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.custom-active {
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 500;
+}
+
+figure img {
+    transition: transform 0.3s ease;
+}
+
+figure:hover img {
+    transform: scale(1.05);
+}
+
+footer .btn:hover {
+    border: 2px solid #f16179;
+    color: #f16179;
+    background-color: white;
+}
+
+.testimonial-section {
+    padding: 50px 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial-section h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    position: relative;
+    width: 800px;
+    background: white;
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.testimonial-card {
+    display: none;
+    text-align: left;
+    animation: fade 0.5s ease forwards;
+}
+
+.testimonial-card.active {
+    display: block;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.name {
+    color: #e04b62;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.role {
+    color: #aaa;
+    margin: 0 0 10px;
+}
+
+.message {
+    color: #333;
+    line-height: 1.6;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: #222;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #d94a61;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.arrow.prev {
+    left: -30px;
+}
+
+.arrow.next {
+    right: -30px;
+}
+
+.arrow:hover {
+    background: #c03950;
+}
+
+.footer {
+    background: #2e2e2e;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 220px;
+    margin: 20px 0;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-section button {
+    background: #ea6b81;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-icons {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .arrow-box {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+    }
+
+    .testimonial-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .contact-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .arrow-box {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .arrow {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .testimonial-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .footer-section h4 {
+        font-size: 16px;
+    }
+
+    .footer-section input {
+        padding: 6px;
+    }
+
+    .footer-section button {
+        padding: 6px 0;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img {
+            max-height: 150px;
+            object-fit: contain;
+        }
+
+        .custom-nav {
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: black;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .custom-nav:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .custom-nav.active {
+            background-color: white;
+            color: black;
+        }
+
+        .nav-wrapper {
+            background: white;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 8px 20px;
+            width: 1000px;
+        }
+
+        ul.nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin: 0;
+        }
+
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+            padding: 8px 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: white;
+            color: black;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .nav-link.active,
+        .custom-nav.active {
+            color: #f2859e;
+        }
+
+        .d-flex.align-items-center.gap-3 a i {
+            margin-right: 5px;
+        }
+
+        .d-flex.align-items-center.gap-3 a {
+            display: flex;
+            align-items: center;
+            color: #333;
+        }
+
+        .d-flex.align-items-center.gap-3 a:hover {
+            color: #f2859e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav style="background: #fcf5ef; padding: 10px 0; border-radius: 0 0 15px 15px;">
+        <div class="container d-flex justify-content-center">
+            <div class="nav-wrapper d-flex justify-content-between align-items-center gap-4 px-4">
+                <ul class="nav gap-3 mb-0">
+                    <li class="nav-item"><a class="nav-link custom-nav" href="/index.html" onclick="setActive(this)">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav" href="/shop.html" onclick="setActive(this)">SHOP</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav" href="/why us.html" onclick="setActive(this)">WHY US</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link custom-nav" href="/Testimonial.html"
+                            onclick="setActive(this)">TESTIMONIAL</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav" href="/Contact Us.html" onclick="setActive(this)">CONTACT
+                            US</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="nav-link d-flex align-items-center"><i class="fas fa-user me-1"></i>Login</a>
+                    <a href="#" class="nav-link"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="py-5 text-center">
+        <div class="container">
+          <h2 class="fw-bold mb-4">WHY SHOP WITH US</h2>
+          <div class="row justify-content-center">
+            
+            <div class="col-md-3 mb-3">
+              <div class="p-4 shadow-sm bg-light rounded text-center d-flex flex-column align-items-center">
+                <i class="fas fa-shipping-fast fa-3x mb-3" style="color: #320b57;"></i>
+                <h5>Fast Delivery</h5>
+                <p>Variations of passages of Lorem Ipsum available</p>
+              </div>
+            </div>
+      
+            <div class="col-md-3 mb-3">
+              <div class="p-4 shadow-sm bg-light rounded text-center d-flex flex-column align-items-center">
+                <i class="fas fa-truck fa-3x mb-3" style="color: #320b57;"></i>
+                <h5>Free Shipping</h5>
+                <p>Variations of passages of Lorem Ipsum available</p>
+              </div>
+            </div>
+      
+            <div class="col-md-3 mb-3">
+              <div class="p-4 shadow-sm bg-light rounded text-center d-flex flex-column align-items-center">
+                <i class="fas fa-award fa-3x mb-3" style="color: #320b57;"></i>
+                <h5>Best Quality</h5>
+                <p>Variations of passages of Lorem Ipsum available</p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ABOUT US</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Enter your email" />
+                <button>SUBSCRIBE</button>
+            </div>
+            <div class="footer-section">
+                <h4>NEED HELP</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT US</h4>
+                <p>📍 Gb road 123, London UK</p>
+                <p>📞 +01 12345678901</p>
+                <p>📧 mail@domain.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 All Rights Reserved. By <strong>HTML Design</strong></p>
+        </div>
+    </footer>
+
+
+    <script>
+        function setActive(element) {
+            var links = document.querySelectorAll('.custom-nav');
+            links.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+
+    </script>
+
+</body>
+
+</html>
